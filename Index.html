@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portofolio Al'Amin - Mahasiswa Teknologi Informasi Universitas Muhammadiyah Palangkaraya">
+    <title>Portfolio Al'Amin</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+        @media (max-width: 768px) {
+            .ul-header {
+                display: none;
+                flex-direction: column;
+                background-color: #444;
+                position: absolute;
+                top: 60px;
+                right: 10px;
+                padding: 1rem;
+                border-radius: 5px;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <nav>
+                <h1>Portfolio Saya</h1>
+                <ul class="ul-header">
+                    <li><a href="#Home" class="a-header">Home</a></li> 
+                    <li><a href="#portfolio" class="a-header">Portfolio</a></li>
+                    <li><a href="#contact" class="a-header">Contact</a></li>
+                </ul>
+                <!-- Hamburger Icon -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="Home" class="home-section">
+        <div class="img-container">
+            <img src="amin.png" alt="Foto Al'Amin" width="20%">
+        </div>
+        <div class="home-container">
+            <h1>Hi, Saya <span> Al'Amin</span></h1>
+            <p>Saya adalah mahasiswa semester 3 di Universitas Muhammadiyah Palangkaraya, dari Fakultas Bahasa Informasi dan Teknologi program pendidikan Teknologi Informasi.<br/>
+            Web ini dibuat untuk tugas mata kuliah Pemograman Web Kependidikan. </p>
+        </div>
+    </section>
+      
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section"> 
+        <div class="portfolio-container">
+            <h2>Portofolio Proyek</h2>
+            <div class="project">
+                <h3>Proyek 1</h3> 
+                <img src="youtube.png" alt="Thumbnail Proyek 1" width="200" height="200">
+                <p>Deskripsi proyek 1</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Anda dapat menghubungi saya melalui:</h2>
+            <p>Email: <strong>aminreal.bujur@gmail.com</strong></p>
+            <p>Instagram: <strong><a href="https://www.instagram.com/ahmadalamin08" target="_blank">@ahmadalamin08</a></strong></p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Al Amin. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.ul-header');
+            menu.classList.toggle('show'); // Tampilkan atau sembunyikan menu
+        }
+    </script>
+</body>
+</html>
